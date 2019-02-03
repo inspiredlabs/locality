@@ -8,7 +8,7 @@
 
                 {{ if .Site.Params.logo }} <a id="blog-logo" href="{{ .Site.BaseURL }}"><img src="{{ .Site.Params.logo }}" alt="Blog Logo" /></a>{{ end }}
                 <h1 class="f1">{{ .Site.Title}}</h1>
-                {{ if Params.description }}<h2 class="f2">{{ Params.description }}</h2> {{ else  }}
+                {{ if .Site.Params.description }}<h2 class="f2">{{ .Site.Params.description }}</h2> {{ else  }}
                 <h2 class="f2">Tachyons.io</h2>
                 {{ end }}
 
