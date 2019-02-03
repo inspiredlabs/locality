@@ -1,7 +1,7 @@
 {{ partial "header.html" . }}
 <body class="system-sans-serif w-100">
 
-    <!-- The big featured header on the homepage, with the site logo and description -->
+    <!-- The big featured header on the homepage, with the site logo and description --
     <header id="site-head" {{ if .Site.Params.cover }}style="background-image: url({{ .Site.Params.cover }})"{{ end }}>
         <div class="vertical">
             <div id="site-head-content" class="inner">
@@ -16,22 +16,21 @@
                 <a class=''>Cut to the chase</a><br>
             </div>
         </div>
-
     </header>
+    -->
 
-    <main class="content" role="main">
-    <div class='fixed bg-dark-red'>
-    </div>
-        {{ range .Data.Pages.ByWeight }}
-                {{ if eq .Type  "post" }}
-                    {{ .Render "post"}}
-                {{ end }}
-        {{ end }}
-
+<main class="content" role="main">
+	{{ range .Data.Pages.ByWeight }}
+		{{ if eq .Type  "post" }}
+			{{ .Render "post"}}
+		{{ end }}
+	{{ end }}
 </main>
+		
     {{ partial "footer.html" .}}
 
     {{ partial "script.html" .}}
+    <!---->
 
 
 </body>
