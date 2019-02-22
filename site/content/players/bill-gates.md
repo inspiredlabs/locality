@@ -17,8 +17,7 @@ furnishings:
   - Chest of drawers
 internet:
   - Wifi throughout
-connectivity:
-  - Cable
+connectivity: []
 parking:
   - Allocated driveway parking
 details:
