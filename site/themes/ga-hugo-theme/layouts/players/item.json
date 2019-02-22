@@ -4,7 +4,6 @@
         "region" : {{ .Params.region | jsonify }},
         "road" : {{ .Params.road | jsonify }},
         "district" : {{ .Params.district | jsonify }},
-
         "connectivity" : {{ .Params.connectivity | jsonify }},
         "details" : {{ .Params.details | jsonify }},
         "facilities" : {{ .Params.facilities | jsonify }},
@@ -15,14 +14,7 @@
         "occupancy" : {{ .Params.occupancy | jsonify }},
         "parking" : {{ .Params.parking | jsonify }},
         "parking" : {{ .Params.parking | jsonify }},
-
         "content": "{{ .Content | markdownify }}",
         "permalink" : "{{ .Permalink }}",
         "modified": "{{ .Lastmod }}"                                  
       }
-
-
-
-
-
-
