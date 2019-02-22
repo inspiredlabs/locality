@@ -1,4 +1,4 @@
-baseURL = "https://jsonfeed.netlify.com/" #baseURL = "./" or "https://jsonfeed.netlify.com/"
+baseURL = "https://locality.netlify.com/" #baseURL = "./" or "https://jsonfeed.netlify.com/"
 languageCode = "en-gb"
 title = "first_site"
 theme = "ga-hugo-theme"
@@ -29,10 +29,11 @@ theme = "ga-hugo-theme"
   [taxonomies]
     #sport = "sports"
     #practice = "practices"
-    road = "road"    
+    road = "road"
     district = "district"
     region = "region"
     postcode = "postcode"
+
     occupancy = "occupancy"
     furnished = "furnished"
     furnishings = "furnishings"
