@@ -1,11 +1,12 @@
 ---
 date: 2019-02-07T19:02:56.878Z
 title: Room 7
+price: '900'
 bedroom: 8
 road: Broadwater Road
 district: Tooting
 region: London
-postcode: SW17 0DY
+postcode: test
 occupancy:
   - Double for single occupancy
 furnished:
@@ -17,7 +18,9 @@ furnishings:
   - Chest of drawers
 internet:
   - Wifi throughout
-connectivity: []
+connectivity:
+  - 100 channel
+  - Virgin TV
 parking:
   - Allocated driveway parking
 details:

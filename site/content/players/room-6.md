@@ -1,6 +1,7 @@
 ---
 date: 2019-02-22T21:18:05.917Z
 title: Room 6
+price: '1250'
 bedroom: '8'
 road: Broadwater Road
 district: Tooting
@@ -19,7 +20,9 @@ furnishings:
 internet:
   - Wifi throughout
   - Fibre broadband
-connectivity: []
+connectivity:
+  - Virgin TV
+  - 100 channel
 parking:
   - Free parking on driveway
 details:
