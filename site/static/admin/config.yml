@@ -9,34 +9,18 @@ collections: # A list of collections the CMS should be able to edit
     label: "Players" # Used in the UI, ie.: "New Post"
     folder: "site/content/players" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
-
     fields: # The fields each document in this collection have
-    # Description:
-    - {label: "Description", name: "description", widget: "text"}
-
-
-
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Room name", name: "title", widget: "string", default: "", required: true }
       - {label: "Price in GBP, £", name: "price", widget: "number", default: "1000", required: true }
       - {label: "Bedrooms", name: "bedroom", widget: "number", default: "8", valueType: "int", min: "1", max: "999", required: false }
 
-
-
-
-
-
       # Address:
       - {label: "Road name", name: "road", widget: "string", required: false }
       # District: "Streatham" or "Tooting"
       - {label: "District", name: "district", widget: "select", multiple: false, options: ["Streatham", "Tooting" ], required: true, default: "Streatham" }
-
-
       #, default: "London"
       - {label: "Region", name: "region", widget: "string", required: false }
-      #, default: ""
-      # {label: "Location", name: "location", widget: "string" }
-
       # UK postcode, consider regex: SW16 1AA
       - {label: "Postcode", name: "postcode", widget: "string", required: false }
 
