@@ -1,8 +1,8 @@
       {
         "title": "{{ .Title }}",
         "postcode": "{{ .Params.postcode | plainify }}",
-        "region" : "{{ .Params.region | safeHTMLattr }}",
-        "road" : "{{ .Params.road | safeHtml }}",
+        "region" : "{{ .Params.region | markdownify }}",
+        "road" : "{{ .Params.road | safeHTML }}",
         "district" : "{{ .Params.district | safeHTML }}",        
         {{ range $index, $e := .Site.Taxonomies }}{{ with $.Param $index }}
         "{{ $index }}" : "{{ delimit . ", "}}",{{ end }}{{ end }}

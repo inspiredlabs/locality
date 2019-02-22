@@ -11,10 +11,26 @@ collections: # A list of collections the CMS should be able to edit
     create: true # Allow users to create new documents in this collection
 
     fields: # The fields each document in this collection have
+    # Description:
+    - {label: "Description", name: "description", widget: "text"}
+
+      - label: "Image"
+        name: "image"
+        widget: "object"
+        fields:
+          - {label: "Text", name: "text", widget: "string"}
+          - {label: "URL", name: "url", widget: "image"}
+
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Room name", name: "title", widget: "string", default: "", required: true }
       - {label: "Price in GBP, £", name: "price", widget: "number", default: "1000", required: true }
       - {label: "Bedrooms", name: "bedroom", widget: "number", default: "8", valueType: "int", min: "1", max: "999", required: false }
+
+
+
+
+
+
       # Address:
       - {label: "Road name", name: "road", widget: "string", required: false }
       # District: "Streatham" or "Tooting"
