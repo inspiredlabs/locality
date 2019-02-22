@@ -13,7 +13,23 @@
           <h1>{{.Title}}</h1>
           <div style="color:grey; font-size:16px;">{{ dateFormat "Monday, Jan 2, 2006" .Date }}</div>
           <div style="color:grey; font-size:16px;">{{if .Params.author}}Author: {{.Params.Author}}{{end}}</div>
-          <div style="font-size:18px;">{{.Content}}</div>
+          
+          <hr />
+          <code style="">{{if .Params.road-name}}road-name: {{.Params.road-name}}{{end}}</code>
+          <code style="">{{if .Params.district}}district: {{.Params.district}}{{end}}</code>          
+          <code style="">{{if .Params.region}}region: {{.Params.region}}{{end}}</code>                    
+          <code style="">{{if .Params.postcode}}postcode: {{.Params.postcode}}{{end}}</code>                              
+          <code style="">{{if .Params.occupancy}}occupancy: {{.Params.occupancy}}{{end}}</code>                              
+          <code style="">{{if .Params.furnished}}furnished: {{.Params.furnished}}{{end}}</code>                              
+          <code style="">{{if .Params.furnishings}}furnishings: {{.Params.furnishings}}{{end}}</code>                                        
+          <code style="">{{if .Params.internet}}internet: {{.Params.internet}}{{end}}</code>          
+          <code style="">{{if .Params.connectivity}}connectivity: {{.Params.connectivity}}{{end}}</code>                                                  
+          <code style="">{{if .Params.parking}}parking: {{.Params.parking}}{{end}}</code>                                                            
+          <code style="">{{if .Params.details}}details: {{.Params.details}}{{end}}</code>                                                                   
+          <code style="">{{if .Params.level}}level: {{.Params.level}}{{end}}</code>
+          <code style="">{{if .Params.facilities}}facilities: {{.Params.facilities}}{{end}}</code>                                                                       
+          <hr />
+          <code style="">{{.Content}}</div>
      </div>
      {{ partial "footer" . }}
      {{ partial "sticky" . }}
