@@ -28,13 +28,17 @@ collections: # A list of collections the CMS should be able to edit
 
       # Address:
       #- {label: 'House number', name: 'house-number', widget: 'number', valueType: 'int', default: '' }
-      - {label: 'Road name', name: 'road', widget: 'string', default: 'Drewstead Road' }
-      - {label: 'District', name: 'district', widget: 'text', default: 'Streatham' }
-      - {label: 'Region', name: 'region', widget: 'text', default: 'London' }
-      # {label: 'Location', name: 'location', widget: 'string', default: '' }
+      #, default: 'Drewstead Road'
+      - {label: 'Road name', name: 'road', widget: 'string' }
+      #, default: 'Streatham'
+      - {label: 'District', name: 'district', widget: 'text' }
+      #, default: 'London'
+      - {label: 'Region', name: 'region', widget: 'text' }
+      #, default: ''
+      # {label: 'Location', name: 'location', widget: 'string' }
 
       # UK postcode, consider regex: SW16 1AA
-      - {label: 'Postcode', name: 'postcode', widget: 'text'}
+      - {label: 'Postcode', name: 'postcode', widget: 'text' }
 
       # Occupancy
       - {label: 'Occupancy', name: 'occupancy', widget: 'select', multiple: true, options: ['Double', 'Double for two people', 'Double for one or two people', 'Double for single occupancy', 'Single', 'Family', 'Twin', 'Triple', 'Bunk', 'Master bedroom'], required: false, default: 'Double for single occupancy' }
