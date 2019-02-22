@@ -5,9 +5,9 @@ media_folder: 'site/static/img' # Folder where user uploaded files should go
 public_folder: 'img'
 
 collections: # A list of collections the CMS should be able to edit
-  - name: 'players' # Used in routes, ie.: /admin/collections/:slug/edit
-    label: 'Players' # Used in the UI, ie.: 'New Post'
-    folder: 'site/content/players' # The path to the folder where the documents are stored
+  - name: 'rooms' # Used in routes, ie.: /admin/collections/:slug/edit
+    label: 'Rooms' # Used in the UI, ie.: 'New Post'
+    folder: 'site/content/rooms' # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
 
     fields: # The fields each document in this collection have
