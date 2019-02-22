@@ -42,7 +42,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Internet connectivity", name: "internet", widget: "select", multiple: true, options: ["Wifi in the room", "Wifi throughout", "Fibre in the room", "Fibre broadband", "Broadband in the room", "Broadband throughout", "Satilite"], required: false, default: "Wifi throughout" }
 
       # Viewing connectivity
-      - {label: "Viewing connectivity", name: "connectivity", widget: "select", multiple: true, options: ["Sky HD", "100 channel", "Virgin TV", "Virgin TV", "Netflix", "Cable", "Freeview", "Terrestrial TV"], required: false  }
+      - {label: "Viewing connectivity", name: "connectivity", widget: "select", multiple: true, options: ["Sky HD", "100 channel", "Virgin TV", "Netflix", "Cable", "Freeview", "Terrestrial TV"], required: false  }
 
       # Parking
       - {label: "Parking", name: "parking", widget: "select", multiple: true, options: ["Free on road parking", "Free parking on driveway", "Allocated driveway parking", "Metered on road parking", "Residents permit parking", "Residential parking space", "Residential parking garage", "No parking"], required: false, default: "Free on road parking" }
