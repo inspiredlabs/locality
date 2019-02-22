@@ -1,6 +1,7 @@
 ---
-title: Room 7
 date: 2019-02-07T19:02:56.878Z
+title: Room 7
+bedroom: 8
 road: Broadwater Road
 district: Tooting
 region: London
