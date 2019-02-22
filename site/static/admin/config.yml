@@ -14,12 +14,7 @@ collections: # A list of collections the CMS should be able to edit
     # Description:
     - {label: "Description", name: "description", widget: "text"}
 
-      - label: "Image"
-        name: "image"
-        widget: "object"
-        fields:
-          - {label: "Text", name: "text", widget: "string"}
-          - {label: "URL", name: "url", widget: "image"}
+
 
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Room name", name: "title", widget: "string", default: "", required: true }

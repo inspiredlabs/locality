@@ -1,9 +1,9 @@
       {
         "title": "{{ .Title }}",
-        "postcode": "{{ .Params.postcode | plainify }}",
-        "region" : "{{ .Params.region | markdownify }}",
-        "road" : "{{ .Params.road | safeHTML }}",
-        "district" : "{{ .Params.district | safeHTML }}",        
+        "postcode": "{{ .Params.postcode | jsonify }}",
+        "region" : "{{ .Params.region | jsonify }}",
+        "road" : "{{ .Params.road | jsonify }}",
+        "district" : "{{ .Params.district | jsonify }}",        
         {{ range $index, $e := .Site.Taxonomies }}{{ with $.Param $index }}
         "{{ $index }}" : "{{ delimit . ", "}}",{{ end }}{{ end }}
         "content": "{{ .Content | markdownify }}",
