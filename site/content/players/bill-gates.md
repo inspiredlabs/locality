@@ -1,15 +1,7 @@
 ---
-test: Test
+title: Room 7
 date: 2019-02-07T19:02:56.878Z
-age: 58
-emergency_contact: +1 (555) 555 5555
-sports: baseball
-team: MicroSoccer
-practices:
-  - Mon
-year: Seniors
-house-number: 1
-road-name: Broadwater Road
+road: Broadwater Road
 district: Tooting
 region: London
 postcode: SW17 0DY
@@ -40,8 +32,9 @@ facilities:
   - Shared toilet
   - En suite shower
 ---
-Room 7: http://www.citysharers.co.uk/tooting-room-7/
 
-link: http://www.spareroom.co.uk/flatshare/flatshare_detail.pl?flatshare_id=83210
+[archived](http://www.citysharers.co.uk/tooting-room-7/) 
+
+[photos](http://www.spareroom.co.uk/flatshare/flatshare_detail.pl?flatshare_id=83210) 
 
 A spacious first floor double with high ceilings, this room has a dual aspect – one large sash and one quirky round window. Blackout blinds. The room shares a toilet and benefits from a brand new luxury shower-room.  Floors are carpeted in a high quality berber wool mix. Furniture included: double bed with orthopedic mattress, in built wardrobe, dressing table, chest of drawers.

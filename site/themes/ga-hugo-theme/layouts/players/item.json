@@ -1,11 +1,12 @@
       {
-        "name": "{{ .Title }}",
+        "title": "{{ .Title }}",
         "contact" : "{{ .Params.emergency_contact }}",
-        "year" : "{{ .Params.year }}",{{ range $index, $e := .Site.Taxonomies }}{{ with $.Param $index }}
+        "year" : "{{ .Params.year }}",
+        {{ range $index, $e := .Site.Taxonomies }}{{ with $.Param $index }}
         "{{ $index }}" : "{{ delimit . ", "}}",{{ end }}{{ end }}
         "content": "{{ .Content | markdownify }}",
         "permalink" : "{{ .Permalink }}",
-        "modified": "{{ .Lastmod }}"
+        "modified": "{{ .Lastmod }}"                                  
       }
 
 

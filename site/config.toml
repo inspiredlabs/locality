@@ -27,8 +27,22 @@ theme = "ga-hugo-theme"
     baseName = "_redirects"
 
   [taxonomies]
-    sport = "sports"
-    practice = "practices"
+    #sport = "sports"
+    #practice = "practices"
+    road = "road"    
+    district = "district"
+    region = "region"
+    postcode = "postcode"
+    occupancy = "occupancy"
+    furnished = "furnished"
+    furnishings = "furnishings"
+    internet = "internet"
+    connectivity = "connectivity"
+    parking = "parking"
+    level = "level"
+    facilities = "facilities"
+    details = "details"
+
 
   [permalinks]
     page = "/:section/:title/"

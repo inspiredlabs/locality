@@ -4,7 +4,13 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<title>`single.html`</title>
-		 {{ partial "scripts" . }}     
+		 {{ partial "scripts" . }}
+		 <style>
+		 	code {
+		 		display:block;
+		 		background: gainsboro;
+		 	}
+		 </style>  
 </head>
 <body>
      {{ partial "header" (dict "Kind" .Kind "Template" "Single") }}
@@ -15,7 +21,7 @@
           <div style="color:grey; font-size:16px;">{{if .Params.author}}Author: {{.Params.Author}}{{end}}</div>
           
           <hr />
-          <code style="">{{if .Params.road-name}}road-name: {{.Params.road-name}}{{end}}</code>
+          <!--<code style="">{{if .Params.road}}road: {{.Params.road}}{{end}}</code>-->
           <code style="">{{if .Params.district}}district: {{.Params.district}}{{end}}</code>          
           <code style="">{{if .Params.region}}region: {{.Params.region}}{{end}}</code>                    
           <code style="">{{if .Params.postcode}}postcode: {{.Params.postcode}}{{end}}</code>                              
@@ -29,10 +35,11 @@
           <code style="">{{if .Params.level}}level: {{.Params.level}}{{end}}</code>
           <code style="">{{if .Params.facilities}}facilities: {{.Params.facilities}}{{end}}</code>                                                                       
           <hr />
-          <code style="">{{.Content}}</div>
+          
+          <code style="">{{.Content}}</code>
      </div>
      {{ partial "footer" . }}
      {{ partial "sticky" . }}
-          
+     
 </body>
 </html>
