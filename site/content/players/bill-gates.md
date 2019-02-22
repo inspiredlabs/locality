@@ -5,7 +5,7 @@ bedroom: 8
 road: Broadwater Road
 district: Tooting
 region: London
-postcode: SW17 0DY
+postcode: TEST
 occupancy:
   - Double for single occupancy
 furnished:
@@ -17,8 +17,7 @@ furnishings:
   - Chest of drawers
 internet:
   - Wifi throughout
-connectivity:
-  - Cable
+connectivity: []
 parking:
   - Allocated driveway parking
 details:
