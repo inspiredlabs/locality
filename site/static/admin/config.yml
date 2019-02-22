@@ -1,72 +1,60 @@
 backend:
   name: git-gateway
 
-media_folder: 'site/static/img' # Folder where user uploaded files should go
-public_folder: 'img'
+media_folder: "site/static/img" # Folder where user uploaded files should go
+public_folder: "img"
 
 collections: # A list of collections the CMS should be able to edit
-  - name: 'players' # Used in routes, ie.: /admin/collections/:slug/edit
-    label: 'Players' # Used in the UI, ie.: 'New Post'
-    folder: 'site/content/players' # The path to the folder where the documents are stored
+  - name: "players" # Used in routes, ie.: /admin/collections/:slug/edit
+    label: "Players" # Used in the UI, ie.: "New Post"
+    folder: "site/content/players" # The path to the folder where the documents are stored
     create: true # Allow users to create new documents in this collection
 
     fields: # The fields each document in this collection have
-      - {label: 'Publish Date', name: 'date', widget: 'datetime'}
-      - {label: 'Room name', name: 'title', widget: 'string', default: '', required: true }
-      - {label: 'Price in GBP, £', name: 'price', widget: 'number', default: '1000', required: true }      
-      - {label: 'Bedrooms', name: 'bedroom', widget: 'number', default: '8', valueType: 'int', min: '1', max: '999', required: false }
-
-
-      # - {label: 'Publish Date', name: 'date', widget: 'datetime'}
-      # - {label: 'Age', name: 'age', widget: 'number', valueType: 'int', default: '16' }
-      # - {label: 'Emergancy contact', name: 'emergency_contact', widget: 'string', default: '+1 (555) 555 5555'}
-      # - {label: 'Sports', name: 'sports', widget: 'select', options: ['soccer', 'baseball'], required: true, default: baseball}
-      # - {label: 'Team', name: 'team', widget: 'string', default: ''}
-      # - {label: 'Practices', name: 'practices', widget: 'select', multiple: true, options: ['Mon', 'Tue', 'Wed', 'Thur', 'Fri', 'Sat', 'Sun'], required: false, default: 'Sat'}
-      # - {label: 'Year', name: 'year', widget: 'string', default: 'junior'}
-
-
-
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Room name", name: "title", widget: "string", default: "", required: true }
+      - {label: "Price in GBP, £", name: "price", widget: "number", default: "1000", required: true }
+      - {label: "Bedrooms", name: "bedroom", widget: "number", default: "8", valueType: "int", min: "1", max: "999", required: false }
       # Address:
-      #- {label: 'House number', name: 'house-number', widget: 'number', valueType: 'int', default: '' }
-      #, default: 'Drewstead Road'
-      - {label: 'Road name', name: 'road', widget: 'string', required: false }
-      #, default: 'Streatham'
-      - {label: 'District', name: 'district', widget: 'text', required: false }
-      #, default: 'London'
-      - {label: 'Region', name: 'region', widget: 'text', required: false }
-      #, default: ''
-      # {label: 'Location', name: 'location', widget: 'string' }
+      - {label: "Road name", name: "road", widget: "string", required: false }
+      # District: "Streatham" or "Tooting"
+      - {label: "District", name: "district", widget: "select", multiple: false, options: ["Streatham", "Tooting" ], required: true, default: "Streatham" }
+
+
+      #, default: "London"
+      - {label: "Region", name: "region", widget: "string", required: false }
+      #, default: ""
+      # {label: "Location", name: "location", widget: "string" }
 
       # UK postcode, consider regex: SW16 1AA
-      - {label: 'Postcode', name: 'postcode', widget: 'text', required: false }
+      - {label: "Postcode", name: "postcode", widget: "string", required: false }
 
       # Occupancy
-      - {label: 'Occupancy', name: 'occupancy', widget: 'select', multiple: true, options: ['Double', 'Double for two people', 'Double for one or two people', 'Double for single occupancy', 'Single', 'Family', 'Twin', 'Triple', 'Bunk', 'Master bedroom'], required: false, default: 'Double for single occupancy' }
+      - {label: "Occupancy", name: "occupancy", widget: "select", multiple: true, options: ["Double", "Double for two people", "Double for one or two people", "Double for single occupancy", "Single", "Family", "Twin", "Triple", "Bunk", "Master bedroom"], required: false, default: "Double for single occupancy" }
 
       # Furnished
-      - {label: 'Furnished', name: 'furnished', widget: 'select', multiple: true, options: ['Furnished', 'Unfurnished', 'Furnished house', 'Unurnished room', 'Partially furnished', 'Furnished living room'], required: false, default: 'Furnished' }
+      - {label: "Furnished", name: "furnished", widget: "select", multiple: true, options: ["Furnished", "Unfurnished", "Furnished house", "Unurnished room", "Partially furnished", "Furnished living room"], required: false, default: "Furnished" }
 
       # Furnishings
-      - {label: 'Furnishings', name: 'furnishings', widget: 'select', multiple: true, options: ['Double bed', 'Single bed', 'Orthopedic mattress', 'Inbuilt wardrobe', 'Freestanding Wardrobe', 'Double wardrobe', 'Walk-in wardrobe', 'Two wardrobes', 'Chest of drawers', 'Sets of drawers', 'Desk & chair', 'Sofa', 'Leather sofa', 'Leather wingback reading chair', 'Leather recliner', 'Comfy recliner', 'Fireplace', 'Safe', 'Storage space', 'Low slung leather bed', 'Dressing table' ], required: false, default: 'Ground floor' }
+      - {label: "Furnishings", name: "furnishings", widget: "select", multiple: true, options: ["Double bed", "Single bed", "Orthopedic mattress", "Inbuilt wardrobe", "Freestanding Wardrobe", "Double wardrobe", "Walk-in wardrobe", "Two wardrobes", "Chest of drawers", "Sets of drawers", "Desk & chair", "Sofa", "Leather sofa", "Leather wingback reading chair", "Leather recliner", "Comfy recliner", "Fireplace", "Safe", "Storage space", "Low slung leather bed", "Dressing table" ], required: false, default: "Ground floor" }
 
       # Internet connectivity
-      - {label: 'Internet connectivity', name: 'internet', widget: 'select', multiple: true, options: ['Wifi in the room', 'Wifi throughout', 'Fibre in the room', 'Fibre broadband', 'Broadband in the room', 'Broadband throughout', 'Satilite'], required: false, default: 'Wifi throughout' }
+      - {label: "Internet connectivity", name: "internet", widget: "select", multiple: true, options: ["Wifi in the room", "Wifi throughout", "Fibre in the room", "Fibre broadband", "Broadband in the room", "Broadband throughout", "Satilite"], required: false, default: "Wifi throughout" }
 
       # Viewing connectivity
-      - {label: 'Viewing connectivity', name: 'connectivity', widget: 'select', multiple: true, options: ['Sky HD', '100 channel', 'Virgin TV', 'Virgin TV', 'Netflix', 'Cable', 'Freeview', 'Terrestrial TV'], required: false  }
+      - {label: "Viewing connectivity", name: "connectivity", widget: "select", multiple: true, options: ["Sky HD", "100 channel", "Virgin TV", "Virgin TV", "Netflix", "Cable", "Freeview", "Terrestrial TV"], required: false  }
 
       # Parking
-      - {label: 'Parking', name: 'parking', widget: 'select', multiple: true, options: ['Free on road parking', 'Free parking on driveway', 'Allocated driveway parking', 'Metered on road parking', 'Residents permit parking', 'Residential parking space', 'Residential parking garage', 'No parking'], required: false, default: 'Free on road parking' }
+      - {label: "Parking", name: "parking", widget: "select", multiple: true, options: ["Free on road parking", "Free parking on driveway", "Allocated driveway parking", "Metered on road parking", "Residents permit parking", "Residential parking space", "Residential parking garage", "No parking"], required: false, default: "Free on road parking" }
 
       # Details
-      - {label: 'Details', name: 'details', widget: 'select', multiple: true, options: ['Bay window', 'Double window', 'Sash windows', 'Quirky, round window', 'Spacious', 'Dual aspect', 'Two windows', 'Blackout blinds', 'Skylight', 'Skylights', 'Bright', 'Minimal', 'Cosy', 'Quiet', 'Garden view', 'Carpeted, berber wool mix', 'Tiled floor', 'Parquet wooden floor', 'Polished wooden floor', 'Wooden floor', 'Dark wooden floor', 'Garden view', 'Private garden access', 'Conservatory', 'Mezzanine', 'High ceilings', 'Sloping ceilings', 'Overlooking garden', 'Entertainment system', '5.1 dolby surround sound', 'AV receiver', 'HD Projector', 'Original wood mouldings', 'Period features',  'Weathered features', 'Exposed brickwork', 'Glass panelling', 'Restored', 'Former Vicarage', 'Housekeeper' ], required: false, default: 'Ground floor' }
+      - {label: "Details", name: "details", widget: "select", multiple: true, options: ["Bay window", "Double window", "Sash windows", "Quirky, round window", "Spacious", "Dual aspect", "Two windows", "Blackout blinds", "Skylight", "Skylights", "Bright", "Minimal", "Cosy", "Quiet", "Garden view", "Carpeted, berber wool mix", "Tiled floor", "Parquet wooden floor", "Polished wooden floor", "Wooden floor", "Dark wooden floor", "Garden view", "Private garden access", "Conservatory", "Mezzanine", "High ceilings", "Sloping ceilings", "Overlooking garden", "Entertainment system", "5.1 dolby surround sound", "AV receiver", "HD Projector", "Original wood mouldings", "Period features",  "Weathered features", "Exposed brickwork", "Glass panelling", "Restored", "Former Vicarage", "Housekeeper" ], required: false, default: "Ground floor" }
 
       # Level
-      - {label: 'Level', name: 'level', widget: 'select', multiple: true, options: ['Ground floor', 'First floor', 'Second floor', 'Double loft', 'Loft', 'Attic', 'Basment', 'Garden'], required: false, default: 'Ground floor' }
+      - {label: "Level", name: "level", widget: "select", multiple: true, options: ["Ground floor", "First floor", "Second floor", "Double loft", "Loft", "Attic", "Basment", "Garden"], required: false, default: "Ground floor" }
 
       # Wash facilities
-      - {label: 'Wash facilities', name: 'facilities', widget: 'select', multiple: true, options: ['Shared bathroom', 'Shared toilet', 'En suite', 'En suite washroom', 'En suite bathroom', 'En suite shower', 'Shower', 'Power shower', 'Vanity unit', 'Sink', 'Limestone sink', 'Marble floor', 'Tiled floor', 'Washbasin', 'Wetroom', 'Toilet', 'Bidet', 'Bath', 'Double bathtub', 'Free-standing bathtub', 'Free-standing bathtub', 'Underfloor heating'], required: false, default: 'En suite' }
+      - {label: "Wash facilities", name: "facilities", widget: "select", multiple: true, options: ["Shared bathroom", "Shared toilet", "En suite", "En suite washroom", "En suite bathroom", "En suite shower", "Shower", "Power shower", "Vanity unit", "Sink", "Limestone sink", "Marble floor", "Tiled floor", "Washbasin", "Wetroom", "Toilet", "Bidet", "Bath", "Double bathtub", "Free-standing bathtub", "Free-standing bathtub", "Underfloor heating"], required: false, default: "En suite" }
 
       # Introduction
-      - {label: 'Body', name: 'body', widget: 'markdown'}
+      - {label: "Body", name: "body", widget: "markdown"}
