@@ -12,8 +12,9 @@ collections: # A list of collections the CMS should be able to edit
 
     fields: # The fields each document in this collection have
       - {label: 'Publish Date', name: 'date', widget: 'datetime'}
-      - {label: 'Room name', name: 'title', widget: 'string', default: '' }
-      - {label: 'Bedrooms', name: 'bedroom', widget: 'number', default: '8', valueType: 'int', min: '1', max: '999' }
+      - {label: 'Room name', name: 'title', widget: 'string', default: '', required: true }
+      - {label: 'Price in GBP, £', name: 'price', widget: 'number', default: '1000', required: true }      
+      - {label: 'Bedrooms', name: 'bedroom', widget: 'number', default: '8', valueType: 'int', min: '1', max: '999', required: false }
 
 
       # - {label: 'Publish Date', name: 'date', widget: 'datetime'}
@@ -29,16 +30,16 @@ collections: # A list of collections the CMS should be able to edit
       # Address:
       #- {label: 'House number', name: 'house-number', widget: 'number', valueType: 'int', default: '' }
       #, default: 'Drewstead Road'
-      - {label: 'Road name', name: 'road', widget: 'string' }
+      - {label: 'Road name', name: 'road', widget: 'string', required: false }
       #, default: 'Streatham'
-      - {label: 'District', name: 'district', widget: 'text' }
+      - {label: 'District', name: 'district', widget: 'text', required: false }
       #, default: 'London'
-      - {label: 'Region', name: 'region', widget: 'text' }
+      - {label: 'Region', name: 'region', widget: 'text', required: false }
       #, default: ''
       # {label: 'Location', name: 'location', widget: 'string' }
 
       # UK postcode, consider regex: SW16 1AA
-      - {label: 'Postcode', name: 'postcode', widget: 'text' }
+      - {label: 'Postcode', name: 'postcode', widget: 'text', required: false }
 
       # Occupancy
       - {label: 'Occupancy', name: 'occupancy', widget: 'select', multiple: true, options: ['Double', 'Double for two people', 'Double for one or two people', 'Double for single occupancy', 'Single', 'Family', 'Twin', 'Triple', 'Bunk', 'Master bedroom'], required: false, default: 'Double for single occupancy' }
@@ -53,7 +54,7 @@ collections: # A list of collections the CMS should be able to edit
       - {label: 'Internet connectivity', name: 'internet', widget: 'select', multiple: true, options: ['Wifi in the room', 'Wifi throughout', 'Fibre in the room', 'Fibre broadband', 'Broadband in the room', 'Broadband throughout', 'Satilite'], required: false, default: 'Wifi throughout' }
 
       # Viewing connectivity
-      - {label: 'Viewing connectivity', name: 'connectivity', widget: 'select', multiple: true, options: ['Sky HD', 'Netflix', 'Cable', 'Freeview', 'Terrestrial TV'], required: false, default: 'Sky HD', '100 channel', 'Virgin TV', '100 channel Virgin TV' }
+      - {label: 'Viewing connectivity', name: 'connectivity', widget: 'select', multiple: true, options: ['Sky HD', '100 channel', 'Virgin TV', 'Virgin TV', 'Netflix', 'Cable', 'Freeview', 'Terrestrial TV'], required: false  }
 
       # Parking
       - {label: 'Parking', name: 'parking', widget: 'select', multiple: true, options: ['Free on road parking', 'Free parking on driveway', 'Allocated driveway parking', 'Metered on road parking', 'Residents permit parking', 'Residential parking space', 'Residential parking garage', 'No parking'], required: false, default: 'Free on road parking' }

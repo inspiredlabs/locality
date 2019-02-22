@@ -32,9 +32,4 @@ facilities:
   - Shared toilet
   - En suite shower
 ---
-
-[archived](http://www.citysharers.co.uk/tooting-room-7/) 
-
-[photos](http://www.spareroom.co.uk/flatshare/flatshare_detail.pl?flatshare_id=83210) 
-
 A spacious first floor double with high ceilings, this room has a dual aspect – one large sash and one quirky round window. Blackout blinds. The room shares a toilet and benefits from a brand new luxury shower-room.  Floors are carpeted in a high quality berber wool mix. Furniture included: double bed with orthopedic mattress, in built wardrobe, dressing table, chest of drawers.
