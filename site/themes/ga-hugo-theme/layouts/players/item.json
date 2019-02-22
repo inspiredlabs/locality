@@ -1,10 +1,9 @@
       {
         "title": "{{ .Title }}",
         "postcode": "{{ .Params.postcode | plainify }}",
-        "region" : "{{ .Params.region | Plain }}",
+        "region" : "{{ .Params.region | safeHTMLattr }}",
         "road" : "{{ .Params.road | safeHtml }}",
-        "district" : "{{ .Params.district | safeHTML }}",
-        
+        "district" : "{{ .Params.district | safeHTML }}",        
         {{ range $index, $e := .Site.Taxonomies }}{{ with $.Param $index }}
         "{{ $index }}" : "{{ delimit . ", "}}",{{ end }}{{ end }}
         "content": "{{ .Content | markdownify }}",
