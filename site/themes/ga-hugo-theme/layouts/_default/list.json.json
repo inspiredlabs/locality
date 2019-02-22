@@ -1,0 +1,11 @@
+{{ define "response" }}
+  {
+    {{ with eq .Kind  "section"}}"section" : "{{ $.Section }}",{{ end }}
+    {{ with eq .Kind  "taxonomy"}}"taxonomy" : "{{ $.Data.Singular }}",
+        "term" : "{{ $.Data.Term }}",
+    {{ end }}
+    "items" : [
+{{ range $i, $e := .Data.Pages }}{{ if $i }},
+{{ end }}{{ .Render "item" }}{{ end }}
+    ]
+  }{{ end }}

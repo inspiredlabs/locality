@@ -1,15 +1,34 @@
-baseurl = "/"
-languageCode = "en-gb" #Initial configuration reset
-title = "Locality"
+baseURL = "https://jsonfeed.netlify.com/" #baseURL = "./" or "https://jsonfeed.netlify.com/"
+languageCode = "en-gb"
+title = "first_site"
+theme = "ga-hugo-theme"
 
-## As of v0.20, all content files include a default "categories" value that's the same as the section. This was a cheap future-proofing method and should/could be changed accordingly.
-[taxonomies]
-  key = "value"
 
-[Params]
-  [[Params.description]]
-    description = "A description of this website"
 
-  [[Params.links]]
-    title = "Email"
-    url = "mailto:alan.scott.phillips@pm.me"
+
+[mediaTypes]
+  [mediaTypes."text/netlify"]
+    suffixes = ["json"]
+    delimiter = ""
+
+  [outputs]
+    page = ["json", "html"]# ["json", "html"]#, "players"
+    home = ["html", "json", "redirect"]
+    #teams = ["json"]
+    section = ["html", "json"]
+    #taxonomy = ["json", "players"]
+
+  # [outputFormats.players]
+  #   baseName = "players"
+  #   mediatype ="application/json"
+
+  [outputFormats.redirect]
+    mediatype = "text/netlify"
+    baseName = "_redirects"
+
+  [taxonomies]
+    sport = "sports"
+    practice = "practices"
+
+  [permalinks]
+    page = "/:section/:title/"
