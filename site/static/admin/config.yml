@@ -1,4 +1,4 @@
-  backend:
+backend:
   name: git-gateway
 
 media_folder: 'site/static/img' # Folder where user uploaded files should go
@@ -30,8 +30,10 @@ collections: # A list of collections the CMS should be able to edit
 
       # Internet connectivity
       - {label: 'Internet connectivity', name: 'internet', widget: 'select', multiple: true, options: ['Wifi in the room', 'Wifi throughout', 'Fibre in the room', 'Fibre throughout', 'Broadband in the room', 'Broadband throughout', 'Satilite'], required: false, default: 'Wifi throughout' }
+
       # Viewing connectivity
       - {label: 'Viewing connectivity', name: 'connectivity', widget: 'select', multiple: true, options: ['Sky HD', 'Netflix', 'Cable', 'Freeview', 'Terrestrial TV'], required: false, default: 'Sky HD', '100 channel', 'Virgin TV' }
+
       # Parking
       - {label: 'Parking', name: 'parking', widget: 'select', multiple: true, options: ['Free on road parking', 'Allocated driveway parking', 'Metered on road parking', 'Residents permit parking', 'Residential parking space', 'Residential parking garage', 'No parking'], required: false, default: 'Free on road parking' }
 
@@ -40,12 +42,9 @@ collections: # A list of collections the CMS should be able to edit
 
       # Level
       - {label: 'Level', name: 'level', widget: 'select', multiple: true, options: ['Ground floor', 'First floor', 'Second floor', 'Double loft', 'Loft', 'Attic', 'Basment', 'Garden'], required: false, default: 'Ground floor' }
+
       # Wash facilities
       - {label: 'Wash facilities', name: 'facilities', widget: 'select', multiple: true, options: ['Shared bathroom', 'Shared toilet', 'En suite', 'En suite washroom', 'En suite bathroom', 'En suite shower', 'Shower', 'Power shower', 'Vanity unit', 'Sink', 'Limestone sink', 'Marble floor', 'Tiled floor', 'Washbasin', 'Wetroom', 'Toilet', 'Bidet', 'Bath', 'Double bathtub', 'Free-standing bathtub', 'Free-standing bathtub', 'Underfloor heating'], required: false, default: 'En suite' }
-
-      # Photos... etc
-      # Media array... http://www.citysharers.co.uk/streatham/
-      # Alt/social media: - http://www.spareroom.co.uk/flatshare/flatshare_detail.pl?flatshare_id=83210
 
       # Introduction
       - {label: 'Body', name: 'body', widget: 'markdown'}
