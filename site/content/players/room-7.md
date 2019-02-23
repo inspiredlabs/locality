@@ -1,12 +1,14 @@
 ---
 date: 2019-02-07T19:02:56.878Z
-title: Room 7
+description: description is required?
+string: string is required?
+title: Tooting Room 7
 price: '900'
 bedroom: 8
 road: Broadwater Road
 district: Tooting
 region: London
-postcode: test
+postcode: SW17 0DY
 occupancy:
   - Double for single occupancy
 furnished:
@@ -36,3 +38,5 @@ facilities:
   - En suite shower
 ---
 A spacious first floor double with high ceilings, this room has a dual aspect – one large sash and one quirky round window. Blackout blinds. The room shares a toilet and benefits from a brand new luxury shower-room.  Floors are carpeted in a high quality berber wool mix. Furniture included: double bed with orthopedic mattress, in built wardrobe, dressing table, chest of drawers.
+
+\[Test](http://www.spareroom.co.uk/flatshare/flatshare_detail.pl?flatshare_id=83210)
