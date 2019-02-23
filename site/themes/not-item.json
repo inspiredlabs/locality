@@ -22,3 +22,9 @@
 "parking" : {{ .Params.parking | jsonify}},
 
 {{ if $index }}{{ $index | jsonify }}{{ end }}
+
+
+
+This was working in json feed:
+	{{ range $index, $e  := .Site.Taxonomies }}{{ with $.Param  $index }} 
+	"{{ $index }}" : "{{ delimit . ", "}}",{{ end }}{{ end }}
