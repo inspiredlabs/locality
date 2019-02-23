@@ -1,14 +1,14 @@
 ---
-date: 2019-02-23T09:10:32.116Z
-description: Test description box...
-string: Test string entry as well.
+date: 2019-02-23T12:01:19.966Z
+description: It works!
+string: It works!
 title: Room 5
-price: '975'
-bedroom: '8'
-road: Broadwater Road
-district: Tooting
+price: '850'
+bedroom: 6
+road: Drewstead Road
+district: Streatham
 region: London
-postcode: SW17 0DY
+postcode: SW16 1AA
 occupancy:
   - Double for single occupancy
 furnished:
@@ -16,25 +16,28 @@ furnished:
 furnishings:
   - Double bed
   - Orthopedic mattress
+  - Desk & chair
   - Freestanding Wardrobe
   - Chest of drawers
 internet:
   - Wifi throughout
-  - Fibre broadband
+  - Broadband in the room
 connectivity:
-  - 100 channel
-  - Virgin TV
+  - Sky HD
 parking:
-  - Free parking on driveway
+  - Free on road parking
 details:
-  - High ceilings
-  - Bright
-  - Overlooking garden
-  - Blackout blinds
-  - 'Carpeted, berber wool mix'
+  - Sloping ceilings
+  - Quiet
+  - Garden view
+  - Dark wooden floor
 level:
-  - First floor
+  - Double loft
 facilities:
-  - Shared bathroom
+  - Vanity unit
+  - Sink
+  - En suite bathroom
+  - Toilet
+  - Shower
 ---
-A quirky first floor double with high ceilings, large triple pane window overlooking back garden. Blackout blinds. The room benefits from a brand new bathroom shared with 1 other room.  Floors are carpeted in a high quality berber wool mix. Furniture included: double bed with orthopedic mattress, wardrobe, chest of drawers.
+A quirky top floor double loft room with sloping ceilings. Facing the rear of the property, this is the quietest room in the house, with uninterrupted views over the back gardens. There’s a vanity unit with sink in the room, and it also benefits from an ensuite bathroom with shower, sink and toilet. Floors are dark wood stained. Furniture included: double bed with orthopedic mattress,  chest of drawers, wardrobe, desk / chair.
