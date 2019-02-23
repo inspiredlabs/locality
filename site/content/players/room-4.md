@@ -4,7 +4,7 @@ description: It works!
 string: It works!
 title: Room 4
 price: '900'
-bedroom: '8'
+bedroom: 6
 road: Drewstead Road
 district: Streatham
 region: London
