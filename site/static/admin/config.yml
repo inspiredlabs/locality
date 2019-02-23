@@ -19,13 +19,13 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Bedrooms", name: "bedroom", widget: "number", default: "8", valueType: "int", min: "1", max: "999", required: false }
 
       # Address:
-      - {label: "Road name", name: "road", widget: "string", required: false }
+      - {label: "Road name", name: "road", widget: "string", required: false, default: "SW17 0DY == Broadwater Road, SW16 1AA == Drewstead Road" }
       # District: "Streatham" or "Tooting"
-      - {label: "District", name: "district", widget: "select", multiple: false, options: ["Streatham", "Tooting" ], required: true, default: "Streatham" }
+      - {label: "District", name: "district", widget: "select", multiple: false, options: ["Streatham", "Tooting", "Reading" ], required: true, default: "Streatham" }
       #, default: "London"
-      - {label: "Region", name: "region", widget: "string", required: false }
+      - {label: "Region", name: "region", widget: "select", multiple: false, options: ["London", "Reading" ], required: true, default: "London" }
       # UK postcode, consider regex: SW16 1AA
-      - {label: "Postcode", name: "postcode", widget: "string", required: false }
+      - {label: "Postcode", name: "postcode", widget: "string", required: false, default: "SW17 0DY == Broadwater Road, SW16 1AA == Drewstead Road" }
 
       # Occupancy
       - {label: "Occupancy", name: "occupancy", widget: "select", multiple: true, options: ["Double", "Double for two people", "Double for one or two people", "Double for single occupancy", "Single", "Family", "Twin", "Triple", "Bunk", "Master bedroom"], required: false, default: "Double for single occupancy" }

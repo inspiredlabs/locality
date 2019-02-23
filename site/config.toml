@@ -29,6 +29,9 @@ theme = "ga-hugo-theme"
   [taxonomies]
     #sport = "sports"
     #practice = "practices"
+    description = "description"
+    string = "string"
+
     road = "road"
     district = "district"
     region = "region"
