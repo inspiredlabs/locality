@@ -1,12 +1,14 @@
 ---
-date: 2019-02-22T21:18:05.917Z
+date: 2019-02-23T11:41:52.251Z
+description: It works!
+string: It works!
 title: Room 6
-price: '1250'
-bedroom: '8'
-road: Broadwater Road
-district: Tooting
+price: '1300'
+bedroom: 6
+road: Drewstead Road
+district: Streatham
 region: London
-postcode: SW17 0DY
+postcode: SW16 1AA
 occupancy:
   - Double for single occupancy
 furnished:
@@ -14,28 +16,32 @@ furnished:
 furnishings:
   - Double bed
   - Orthopedic mattress
-  - Freestanding Wardrobe
-  - Dressing table
-  - Chest of drawers
+  - Leather wingback reading chair
+  - Sets of drawers
 internet:
+  - Broadband in the room
   - Wifi throughout
-  - Fibre broadband
 connectivity:
-  - Virgin TV
-  - 100 channel
+  - Sky HD
 parking:
-  - Free parking on driveway
+  - Allocated driveway parking
 details:
-  - Blackout blinds
+  - Weathered features
+  - Exposed brickwork
+  - Mezzanine
   - Spacious
-  - Sash windows
-  - Garden view
-  - Bright
-  - Quiet
-  - 'Carpeted, berber wool mix'
-level: Ground floor
+  - Glass panelling
+  - Sloping ceilings
+level:
+  - Attic
 facilities:
-  - Wetroom
+  - Power shower
   - En suite
+  - Bath
+  - Limestone sink
 ---
-A very spacious first floor double with high ceilings, the master bedroom of the house. The crowning feature of this room is the triple sash bay window overlooking the back garden giving lots of light and peace and quiet. Blackout blinds. The room benefits from a brand new ensuite wet-room style bathroom.  Floors are carpeted in a high quality berber wool mix. Furniture included: double bed with orthopedic mattress, in built and freestanding wardrobes, dressing table, chest of drawers.
+A unique and beautifully designed mezzanine room, comprising 500sqft of flexible live/ work space with ensuite bathroom.
+
+Original windows are retained in the living space having been sanded back for a weathered look. Exposed brickwork wall and stairs lead to the mezzanine level, a bedroom enclosed by glass panelling. Sloping ceiling and 3 skylights bringing in lots of natural light. Integrated entertainment system includes Sky HD box / HD projector / Playstation 3 / AV receiver with 5.1 dolby surround sound.
+
+Ensuite has power shower over bath, limestone sink, marble floor, and toilet. Furniture included in the mezzanine room – Leather sofa, leather wingback reading chair, 2 x sets of drawers, low slung leather bed with orthopedic mattress.
