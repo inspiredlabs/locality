@@ -1,40 +1,40 @@
 ---
-date: 2019-02-23T11:02:15.809Z
+date: 2019-02-23T11:53:52.255Z
 description: It works!
 string: It works!
 title: Room 3
-price: '900'
-bedroom: '8'
-road: Broadwater Road
+price: '1100'
+bedroom: 6
+road: Drewstead Road
 district: Streatham
 region: London
-postcode: SW17 0DY
+postcode: SW16 1AA
 occupancy:
-  - Double for single occupancy
+  - Double for one or two people
 furnished:
   - Furnished
 furnishings:
   - Double bed
   - Orthopedic mattress
-  - Freestanding Wardrobe
-  - Chest of drawers
+  - Sofa
+  - Two wardrobes
+  - Sets of drawers
+  - Storage space
 internet:
-  - Wifi in the room
-  - Fibre broadband
+  - Wifi throughout
+  - Broadband in the room
 connectivity:
-  - 100 channel
-  - Virgin TV
+  - Sky HD
 parking:
-  - Free parking on driveway
+  - Free on road parking
 details:
+  - Spacious
   - Bay window
-  - Blackout blinds
-  - Parquet wooden floor
 level:
-  - Ground floor
+  - First floor
 facilities:
-  - En suite shower
   - Vanity unit
   - Sink
+  - Power shower
 ---
-A ground floor garden double, with a large bay window that lets in lots of light. Blackout blinds. The room benefits from a shower and a vanity unit with sink.  Floors are wooden parquet with natural stain. Furniture included: double bed with orthopedic mattress, wardrobe, chest of drawers.
+This 1st floor room is the Master bedroom of the house. It’s a very generous size and has a lovely original bay window. The room suits 1 or 2 people who’d value a bit of extra storage space. You’ll find a vanity unit with sink and also an integrated power shower. Furniture includes: double bed with orthopedic mattress, sofa, 2 wardrobes and 2 chests of drawers. Floors are dark wood stained.
