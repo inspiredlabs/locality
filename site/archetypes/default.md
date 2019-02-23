@@ -1,6 +1,5 @@
 ---
-title: "{{ replace .Name "-" " " | title }}"
+title: "{{ replace .Name "-" " " | lower .Params.postcode | title }}"
 date: {{ .Date }}
 draft: true
 ---
-

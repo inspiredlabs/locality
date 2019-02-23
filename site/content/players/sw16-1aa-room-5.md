@@ -1,7 +1,7 @@
 ---
 date: 2019-02-23T12:01:19.966Z
 description: It works!
-string: It works!
+string: sw16-1aa-room-5
 title: Room 5
 price: '850'
 bedroom: 6

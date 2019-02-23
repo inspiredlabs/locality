@@ -1,7 +1,7 @@
 ---
 date: 2018-02-05T21:05:27.000Z
 description: Large text entry...
-string: Just a string...
+string: uid_sw16-1aa-room-2
 title: Room 2
 price: '900'
 bedroom: 6
@@ -34,3 +34,5 @@ facilities:
   - Vanity unit
 ---
 A charming first floor double room. It has an original fireplace, and a very quirky wall-sunk safe! Also in the room is a vanity unit with sink and an integrated power shower. The double windows look out onto the rear gardens. Floors are dark wood stained. Furniture included: double bed with orthopedic mattress, chest of drawers and wardrobe.
+
+🐋🐋🐋

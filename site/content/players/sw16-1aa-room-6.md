@@ -1,8 +1,8 @@
 ---
 date: 2019-02-23T11:41:52.251Z
 description: It works!
-string: It works!
-title: Streatham Room 6
+string: sw16-1aa-room-6
+title: Room 6
 price: '1300'
 bedroom: 6
 road: Drewstead Road

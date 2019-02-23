@@ -28,3 +28,12 @@
 This was working in json feed:
 	{{ range $index, $e  := .Site.Taxonomies }}{{ with $.Param  $index }} 
 	"{{ $index }}" : "{{ delimit . ", "}}",{{ end }}{{ end }}
+
+
+{
+	"title": "{{ .Title }}",{{ range $index, $e := .Site.Taxonomies }}{{ with $.Param $index }}
+        "{{ $index }}" : {{ . | jsonify}},{{ end }}{{ end }}
+	"content": "{{ .Content | plainify | jsonify }}",
+	"permalink" : "{{ .Permalink }}",
+	"modified": "{{ .Lastmod }}"                                  
+}
