@@ -14,7 +14,9 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Description", name: "description", widget: "text", default: "It works!"}
       - {label: "String", name: "string", widget: "string", default: "It works!"}
 
-      - {label: "Room name", name: "title", widget: "string", default: "", required: true }
+- {label: "Title", name: "title", widget: "string", default: "", required: true }
+
+      - {label: "Room name", name: "title", widget: "string", default: "District & room Nº" }
       - {label: "Price in GBP, £", name: "price", widget: "number", default: "1000", required: true }
       - {label: "Bedrooms", name: "bedroom", widget: "number", default: "8", valueType: "int", min: "1", max: "999", required: false }
 
