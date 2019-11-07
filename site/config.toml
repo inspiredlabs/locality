@@ -1,9 +1,6 @@
 baseURL = "https://locality.netlify.com/" #baseURL = "./" or "https://jsonfeed.netlify.com/"
 languageCode = "en-gb"
-title = "first_site"
-theme = "ga-hugo-theme"
-
-
+title = "Localist.site"
 
 
 [mediaTypes]

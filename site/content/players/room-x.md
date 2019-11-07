@@ -1,4 +1,5 @@
 ---
+draft: true
 date: 2019-02-23T15:47:24.305Z
 string: It works!
 title: Room X
